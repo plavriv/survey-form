@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Build a survey form</title>
+   <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1 id="title">Tell me about music</h1>
+    <p id="description">This is a survey where you cal tell us about the music you're inspired by</p>
+    <form action="" id="survey-form">
+    <label id="name-label">Name:</label>
+       <input type="text" name="name" id="name" required placeholder="first name"><br>
+    <label id="email-label">Email:</label>
+        <input type="email" name="email" id="email" required placeholder="email"><br>
+    <label id="number-label">Number:</label>
+    <input type="number" name="number" id="number" min="0" max="10" required placeholder="$"><br>
+    
+
+
+<select name="guitars" id="dropdown">
+  <option value="fender">Fender</option>
+  <option value="marten">Marten</option>
+  <option value="marchel">Marchel</option>
+  <option value="fenomen">Fenomen</option>
+</select>
+    <br>
+    
+    <input type="radio" id="male" name="gender" value="male" class="radio-inline">Male
+<input type="radio" id="female" name="gender" value="female" class="radio-inline">Female
+<input type="radio" id="other" name="gender" value="other" class="radio-inline">Other
+
+   
+    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" checked>
+<label for="vehicle1"> I have a bike</label><br>
+<input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+<label for="vehicle2"> I have a car</label><br>
+<input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+<label for="vehicle3"> I have a boat</label><br>
+     
+    <textarea placeholder="additional comments"></textarea>
+          
+        <input type="submit" id="submit">
+    </form>
+
+<script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
